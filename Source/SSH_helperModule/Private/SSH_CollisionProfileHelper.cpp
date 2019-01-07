@@ -22,17 +22,6 @@ ETraceTypeQuery USSH_CollisionProfileHelper::GetTraceQueryByTraceName(FName Trac
 		}
 	}
 
-// 
-// 
-// 	ECollisionChannel CollisionChannel;
-// 	FCollisionResponseParams CollisionResponseParams;
-// 
-// 	if (CollisionProfile->GetChannelAndResponseParams(TraceChannelName, CollisionChannel, CollisionResponseParams))
-// 	{
-// 		return CollisionProfile->ConvertToTraceType(CollisionChannel);
-// 
-// 	}
-
 	return ETraceTypeQuery::TraceTypeQuery_MAX;
 }
 
@@ -54,14 +43,6 @@ EObjectTypeQuery USSH_CollisionProfileHelper::GetObjectQueryByObjectName(FName O
 			}
 		}
 	}
-
-// 	ECollisionChannel CollisionChannel;
-// 	FCollisionResponseParams CollisionResponseParams;
-// 
-// 	if (CollisionProfile->GetChannelAndResponseParams(TraceChannelName, CollisionChannel, CollisionResponseParams))
-// 	{
-// 		return CollisionProfile->ConvertToObjectType(CollisionChannel);
-// 	}
 
 	return EObjectTypeQuery::ObjectTypeQuery_MAX;
 }

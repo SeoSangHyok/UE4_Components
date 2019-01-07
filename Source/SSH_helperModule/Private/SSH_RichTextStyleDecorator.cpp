@@ -8,7 +8,6 @@
 #include "Fonts/FontMeasure.h"
 #include "Framework/Text/SlateWidgetRun.h"
 #include "Kismet/KismetStringLibrary.h"
-//#include "UObject/SoftObjectPtr.h"
 
 #define LOCTEXT_NAMESPACE "UMG"
 
@@ -25,10 +24,6 @@ class SSSH_RichStyleTextWidget : public SCompoundWidget
 public:
 	void Construct(const FArguments& InArgs, const FSlateFontInfo& FontInfo, const FSlateColor& FontColor, FText WidgetText)
 	{
-/*
-		FSlateColor SlateColor(FLinearColor::Red);
-		FTextBlockStyle TextBlockStyle;
-*/
 		ChildSlot
 		[
 			SNew(STextBlock)
